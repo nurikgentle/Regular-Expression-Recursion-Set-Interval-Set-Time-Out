@@ -20,7 +20,7 @@ const moveElement = () => {
             }, 100);
             setTimeout(() => {
                 clearInterval(left)
-            }, 5800);
+            }, 20000);
         }, 100);
 
     } else if (positionBottom <= 600) {
@@ -42,6 +42,7 @@ const moveBottom = () => {
     input.style.bottom = `${positionBottom}px`
 }
 
+moveElement()
 
 button.addEventListener("click",() => {
     moveElement()
